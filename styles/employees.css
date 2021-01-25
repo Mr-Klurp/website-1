@@ -1,0 +1,81 @@
+@import url('style.css');
+
+/*.up-nav {
+    position: relative;
+    margin-right: 0;
+    display: inline;
+}*/
+
+/* Style tab links */
+.tablink {
+    position: relative;
+    top: 50px;
+    left: 1000px;
+    background-color: #555;
+    color: rgb(0, 0, 0);
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 0;
+    padding: 14px 16px;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 576px;
+    transition: all 0.6s ease;
+}
+/*
+.change-tablink {
+    left: 300px;
+}
+*/
+.tablink:hover {
+    background-color: #777;
+}
+  
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    position: fixed;
+    width: 1152px;
+    margin-left: 0;
+    top: 230px;
+    left: 1000px;
+    background-color: rgb(240, 22, 240);
+    display: none;
+    padding: 15px 20px;
+    height: 500px;
+    transition: all 0.6s ease;
+}
+
+.tabcontent h3 {
+    position: absolute;
+    top: 1px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.tabcontent li {
+    list-style-image: url('../img/GitHub-Mark-32px.png');
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: relative;
+    left: 30px;
+    font-size: 40px;
+    margin-top: 1rem;
+}
+
+.tabcontent a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    /*font-size: 30px;*/
+}
+
+.tabcontent a:active {
+    color: rgb(240, 22, 240);
+}
+/*
+.change-tabcontent {
+    left: 300px;
+}
+*/

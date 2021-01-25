@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: rgb(70, 68, 68);
+    width: 2304px;
+}
+
+#title h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    font-size: 52px;
+    padding: 25px;
+}
+
+/* Menu icon*/
+.bars {
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    left: 0;
+    transition: all 0.6s ease;
+}
+    
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    margin-left: 10px;
+    transition: 0.6s;
+}
+  
+.change-bar .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+  
+.change-bar .bar2 {opacity: 0;}
+  
+.change-bar .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+  
+.change-bar {
+    left: 250px !important;
+}
+  
+/*Side nav*/
+.side-nav {
+    background-color: #ddd;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    padding-top: 0;
+    left: -250px;
+    z-index: -5;
+    transition: all 0.6s ease;
+}
+.sidenav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+    
+.side-nav ul li a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.side-nav ul li a:active:not(.active) {
+    color: #555;
+}
+
+.side-nav ul .active {
+    text-decoration: underline;
+}
+
+/* Change the link color on hover */
+.side-nav li a:hover {
+    background-color: #555;
+    color: white;
+}
+  
+.change-side-nav .side-nav ul {
+     width: 100px;
+}
+  
+.change-side-nav {
+    left: 0;
+}
+
+body {
+   /* background-color: deeppink;*/
+   /*background-color: rgb(206, 129, 170);*/
+   /*background-color: rgb(231, 155, 238);*/
+    background-color: rgb(159, 104, 190);
+}
+
+.main-tag {
+    position: fixed;
+    top: 170px;
+    left: 100px;
+    transition: all 0.6s ease;
+}
+
+
+.main-tag h2 {
+    font-size: 50px;
+}
+
+.main-tag p {
+    font-size: 25px;
+}
+
+.change-main-tag {
+    left: 320px;
+}
+
+.join-button {
+    background-color: rgb(245, 23, 160);
+    border: none;
+    border-radius: 12px;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 30px 20px;
+    cursor: pointer;
+}
+
+.join-button:hover {
+    background-color: rgb(170, 56, 127);   
+}
+
+.join-button:active {
+    color: rgb(170, 56, 127);
+}
+
+.widget {
+    position: fixed;
+    size: 20px;
+    /*width: ;*/
+    height: 500px;
+    top:350px;
+    left: 100px;
+    transition: all 0.6s ease;
+}
+
+.change-widget {
+    left: 320px;
+}
+
+.footer {
+    position: fixed;
+    width: 2304px;
+    height: 150px;
+    bottom: 0;
+    display: block;
+    overflow: hidden;
+   /* padding: 30px 0;*/
+    box-sizing: border-box;
+    background-color: #64646d;
+}
+
+.inner-footer {
+    display: block;
+    margin: 0 auto;
+    width: 1100px;
+    height: 100px;
+}
+
+.inner-footer .logo-container {
+    padding: 15px 0;
+    position: relative;
+    display: block;
+    left: -600px;
+}
